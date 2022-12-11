@@ -1,7 +1,5 @@
 # Anzhelika Romacheva
 
----
-
 ## Contacts:
 
 - email:
