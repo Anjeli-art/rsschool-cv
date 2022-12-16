@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373a39;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  background-color: #fff2f2;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: #fcc4c4;
+  padding: 20px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__avatar {
+  border: 8px solid #fca3a3;
+  border-radius: 50%;
+  display: block;
+}
+
+.header__profile-name {
+  letter-spacing: 0.6px;
+}
+
+.header__title {
+}
+
+.header__subtitle {
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__list-item {
+  background-color: #fca3a3;
+  padding: 10px;
+  color: #a298b0;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-left: 30px;
+}
