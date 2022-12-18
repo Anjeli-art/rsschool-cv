@@ -63,6 +63,7 @@ select {
 .wrapper {
   background-color: #fff2f2;
   min-height: 100vh;
+  position: relative;
 }
 
 .container {
@@ -131,7 +132,6 @@ a:hover {
 
 .main {
   padding: 10px 0;
-  height: calc(100vh - 204px - 122px);
 }
 
 .profile {
@@ -147,13 +147,16 @@ a:hover {
 .profile__text-code {
   background-color: white;
   padding: 10px;
-  border: 2px solid rgb(214, 213, 213);
+  border: 2px solid #d6d5d5;
   border-radius: 5px;
 }
 
 .footer {
   background-color: #e6dcdc;
   padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__info {
@@ -173,4 +176,38 @@ a:hover {
 
 .footer__info span {
   color: #a298b0;
+}
+
+@media (max-width: 768px) {
+  .header__list {
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .header__list-item:not(:first-child) {
+    margin-left: 0px;
+  }
+
+  .header__list-link {
+    padding: 0;
+    background-color: #fcc4c4;
+    color: #a298b0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header__content {
+    flex-direction: column;
+  }
+
+  .header__title {
+    margin-bottom: 20px;
+  }
+
+  .header__subtitle {
+    margin-bottom: 20px;
+  }
 }

@@ -24,7 +24,10 @@
               class="header__avatar"
             />
             <div class="header__profile-name">
-              <h1 class="header__title">Romacheva<br/> Anzhelika</h1>
+              <h1 class="header__title">
+                Romacheva<br />
+                Anzhelika
+              </h1>
               <h2 class="header__subtitle">frontend developer</h2>
             </div>
             <nav class="header__navigation">
@@ -42,7 +45,9 @@
                   <a class="header__list-link" href="#">project</a>
                 </li>
                 <li class="header__list-item">
-                  <a class="header__list-link" href="#">languаges & education</a>
+                  <a class="header__list-link" href="#"
+                    >languаges & education</a
+                  >
                 </li>
                 <li class="header__list-item">
                   <a class="header__list-link" href="#">contacts</a>
@@ -52,7 +57,6 @@
           </div>
         </div>
       </header>
-
       <main class="main">
         <div class="container">
           <div class="profile">
@@ -79,25 +83,20 @@
             <div class="profile__item">
               <h2 class="title">code</h2>
               <p class="profile__text profile__text-code">
-                <code class="profile__code"> 
-                  const onChangeValueMin = (e: ChangeEvent<HTMLInputElement>) => {
-                  const minValue = +e.currentTarget.value
-                  dispatch(setinputValueMinAC(minValue))
-                  dispatch(setButtonDisAC(false))
-          
-                  if (inputValueMax <= 0 || minValue < 0 || minValue >= inputValueMax) {
-                      dispatch(setDataStringAC("error value!"))
-                  } else {
-                      dispatch(setDataStringAC("enter value and press set"))
-                  }
-                } 
-               </code>
+                <code class="profile__code"
+                  >export const setTodoTС = (): AppThunk => async dispatch => {
+                  dispatch(setAppStatusAC("loading")) try { const res = await
+                  todolistApi.getTodolists() dispatch(setTodosAC(res.data))
+                  res.data.forEach((todo) => { dispatch(setTasksTC(todo.id)) })
+                  } catch (e: any) { handleServerNetworkError(e, dispatch) }
+                  finally { dispatch(setAppStatusAC("success")) } }
+                </code>
               </p>
             </div>
             <div class="profile__item">
               <h2 class="title">project</h2>
               <p class="profile__text">
-              <a href="https://anjeli-art.github.io/Todolist/">Todolist</a>
+                <a href="https://anjeli-art.github.io/Todolist/">Todolist</a>
               </p>
             </div>
             <div class="profile__item">
@@ -120,13 +119,18 @@
         <div class="container">
           <div class="footer__info">
             <p class="footer__info-item">
-              <a class="footer__link" href="https://github.com/Anjeli-art">my github</a>
+              <a class="footer__link" href="https://github.com/Anjeli-art"
+                >my github</a
+              >
             </p>
             <p class="footer__info-item">
-              <a class="footer__link" href="https://rs.school/js-stage0/">rsschool course</a>
-            </p>
-            <p class="footer__info-item">
-              <img src="/rsschool-cv/img/logo-rsschool3.png" alt="logo-footer" class="logo-footer"/>
+              <a class="footer__link" href="https://rs.school/js-stage0/">
+                <img
+                  src="/rsschool-cv/img/logo-rsschool3.png"
+                  alt="logo-footer"
+                  class="logo-footer"
+                />
+              </a>
             </p>
             <span>2022</span>
           </div>
