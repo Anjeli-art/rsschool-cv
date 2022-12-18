@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=" />
     <link rel="stylesheet" href="/rsschool-cv/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -28,6 +34,7 @@
                 <li class="header__list-item">code</li>
                 <li class="header__list-item">project</li>
                 <li class="header__list-item">languаge</li>
+                <li class="header__list-item">contacts</li>
               </ul>
             </nav>
           </div>
@@ -35,11 +42,83 @@
       </header>
 
       <main class="main">
-        <div class="container"></div>
+        <div class="container">
+          <div class="profile">
+            <div class="profile__item">
+              <h2 class="title">about me</h2>
+              <p class="profile__text">
+                I'm a frontend developer with experience in creating SPA, using
+                React, Redux, Typescript Javascript, HTML/CSS I'm always looking
+                forward to improve my expertise. I'm planning study React Native
+                and Node.js because my next goal is to become a Fullstack
+                developer, who is able to create applications for all types of
+                platforms. I prefer to spend my leisure time studying new
+                technologies and improving my English.
+              </p>
+            </div>
+            <div class="profile__item">
+              <h2 class="title">experience</h2>
+              <p class="profile__text">
+                React/React Native Redux/Redux-Thunk/Saga Javascript/Typescript
+                Axios/REST API Material-UI Jest(Unit-tests)/Storybook Git
+                HTML/CSS
+              </p>
+            </div>
+            <div class="profile__item">
+              <h2 class="title">code</h2>
+              <p class="profile__text profile__text-code">
+                <code class="profile__code"> 
+                  const onChangeValueMin = (e: ChangeEvent<HTMLInputElement>) => {
+                  const minValue = +e.currentTarget.value
+                  dispatch(setinputValueMinAC(minValue))
+                  dispatch(setButtonDisAC(false))
+          
+                  if (inputValueMax <= 0 || minValue < 0 || minValue >= inputValueMax) {
+                      dispatch(setDataStringAC("error value!"))
+                  } else {
+                      dispatch(setDataStringAC("enter value and press set"))
+                  }
+                } 
+               </code>
+              </p>
+            </div>
+            <div class="profile__item">
+              <h2 class="title">project</h2>
+              <p class="profile__text">
+              <a href="https://anjeli-art.github.io/Todolist/">Todolist</a>
+              </p>
+            </div>
+            <div class="profile__item">
+              <h2 class="title">languаge</h2>
+              <p class="profile__text">
+                Russian native /English A2 /it-inkubator 2021 /NGTU Alekseeva
+                2007-2010 engineering technology
+              </p>
+            </div>
+            <div class="profile__item">
+              <h2 class="title">contacts</h2>
+              <p class="profile__text">
+                <a href="mailto:shinyanj@gmail.com ">shinyanj@gmail.com </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
-
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer__info">
+            <p class="footer__info-item">
+              <a class="footer__link" href="https://github.com/Anjeli-art">my github</a>
+            </p>
+            <p class="footer__info-item">
+              <a class="footer__link" href="https://rs.school/js-stage0/">rsschool course</a>
+            </p>
+            <p class="footer__info-item">
+              <img src="/rsschool-cv/img/logo-rsschool3.png" alt="logo-footer" class="logo-footer"/>
+            </p>
+            <span>2022</span>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
